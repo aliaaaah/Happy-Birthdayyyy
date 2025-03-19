@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Candle Blow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+      }
+
+      /* Birthday Banner */
+      #birthdayBanner {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ff9f00;
+        color: white;
+        font-size: 24px;
+        padding: 10px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+      }
+
+      .candle-count-display {
+        font-size: 20px;
+        margin: 20px 0;
+      }
+
+      .cake {
+        width: 300px;
+        height: 250px;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 20px;
+        background-color: #f8d7a1; /* Cake color */
+        margin-top: 80px;
+      }
+
+      .plate {
+        width: 350px;
+        height: 50px;
+        background-color: #f1c40f;
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+
+      .layer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: #f8d7a1;
+      }
+
+      .layer-bottom {
+        height: 80px;
+        background-color: #f4a300; /* Bottom layer color */
+      }
+
+      .layer-middle {
+        height: 60px;
+        bottom: 80px;
+        background-color: #f7b731; /* Middle layer color */
+      }
+
+      .layer-top {
+        height: 50px;
+        bottom: 140px;
+        background-color: #f8d7a1; /* Top layer color */
+      }
+
+      .icing {
+        width: 80%;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        left: 10%;
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      .drip {
+        width: 10px;
+        height: 20px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+      }
+
+      .drip1 {
+        left: 25%;
+      }
+
+      .drip2 {
+        left: 50%;
+      }
+
+      .drip3 {
+        left: 75%;
+      }
+
+      /* YouTube iframe styling */
+      #birthdayMusic {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        height: 150px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Birthday Banner -->
+    <div id="birthdayBanner">Happy 19th Birthday Kerin!!!</div>
+
+    <div class="candle-count-display">
+      Candles on the Cake: <span id="candleCount">19</span>
+    </div>
+
+    <div class="cake">
+      <div class="plate"></div>
+      <div class="layer layer-bottom"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-top"></div>
+      <div class="icing"></div>
+      <div class="drip drip1"></div>
+      <div class="drip drip2"></div>
+      <div class="drip drip3"></div>
+    </div>
+
+    <!-- YouTube embedded music -->
+    <iframe
+      id="birthdayMusic"
+      src="https://www.youtube.com/embed/yNdRGqvLS6o?autoplay=1&loop=1&playlist=yNdRGqvLS6o"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+
+    <script src="script.js"></script>
+  </body>
+</html>
